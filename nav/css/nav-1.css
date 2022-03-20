@@ -1,0 +1,63 @@
+/* as usual */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* nav */
+header {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px rgb(229, 229, 229);
+}
+
+.logo {
+    width: 52px;
+    height: 72px;
+    border: solid 1px rgb(229, 229, 229);
+    margin-right: 30px;
+    background-image: url(https://olympics.com/images/static/beijing-images/header/b2022-emblem.svg);
+    background-size: cover;
+}
+
+nav:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    /* nav此时的height和header一样，因为align-items的默认值为stretch */
+    height: 100%;
+    display: flex;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 8px;
+}
+
+.nav-item a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+}
