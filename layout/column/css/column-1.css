@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+article {
+    column-rule: 1px solid #eee;
+    column-gap: 2rem;
+    border: 1px solid #000;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    column-span: all;
+}
+
+.one {
+    column-count: 2;
+    column-width: 300px; /*minimum width*/
+    /* 
+        columns: column-count column-width;
+        columns: 2 300px; 
+    */
+}
+
+.two {
+    columns: 4 200px;
+}
