@@ -1,0 +1,55 @@
+body {
+    display: flex; /*footer也可以用position: fixed的 练习一下flex*/
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.tabs {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap; /* 包裹性很重要哈 */
+    width: 800px;
+    border: 1px solid #009578;
+    font-family: sans-serif;
+}
+
+.tab-label {
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.tab-radio {
+    display: none;
+}
+
+.tab-content {
+    display: none;
+    order: 1; /* 其它flex item的显示顺序默认为0 显示在前 */
+    width: 100%; /*设置的很好 flex-wrap起作用了*/
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+/* 相邻兄弟选择符+ */
+.tab-radio:checked + .tab-label {
+    color: #009578;
+    border-bottom: 5px solid #009578;
+}
+
+.tab-radio:checked + .tab-label + .tab-content {
+    display: initial;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #009578;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: pink;
+}
