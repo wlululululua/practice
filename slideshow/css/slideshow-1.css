@@ -1,0 +1,92 @@
+:root {
+    --dcode-color: #009578;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.slideshow {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.slide__item {
+    display: none;
+    height: 100%;
+    padding: 1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    /* background-color: grey; */
+    background-size: cover;
+}
+
+.slide__item:nth-child(1) {
+    background-image: url(../img/frank-mckenna-4V8JxijgZ_c-unsplash.jpg);
+}
+
+.slide__item:nth-child(2) {
+    background-image: url(../img/frank-mckenna-8bRf_BmjbpU-unsplash.jpg);
+}
+
+.slide__item:nth-child(3) {
+    background-image: url(../img/frank-mckenna-OD9EOzfSOh0-unsplash.jpg);
+}
+
+.slide__item:nth-child(4) {
+    background-image: url(../img/frank-mckenna-rFlmsFt84SE-unsplash.jpg);
+}
+
+.slide__item:nth-child(5) {
+    background-image: url(../img/frank-mckenna-Wr79EN6_R3Y-unsplash.jpg);
+}
+
+.slide__item--selected {
+    display: block;
+}
+
+.slide__nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.slide__btn {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slide__btn--selected {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--dcode-color);
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: pink;
+}
