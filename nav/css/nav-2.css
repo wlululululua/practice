@@ -1,0 +1,90 @@
+:root {
+    --dcode-color: #009578;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .main {
+    transform: translateX(250px);
+    transition: transform 0.3s;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    transform: translateX(-250px);
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.nav-close {
+    display: block;
+    margin-left: auto;
+    padding: 15px 25px;
+    font-size: 2em;
+    color: #ddd;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.control-nav {
+    display: block;
+    padding: 15px 25px;
+    font-size: 2em;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-links-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-text {
+    margin-left: 20px;
+}
+
+.main {
+    height: 100vh;
+    line-height: 1.5;
+}
+
+footer {
+    /* 此时position: fixed是相对于main定位，因为main设置了transform */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--dcode-color);
+}
+
+footer a {
+    font-weight: bold;
+    color: pink;
+    text-decoration: none;
+}

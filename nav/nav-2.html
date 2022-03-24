@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav | 2</title>
+    <link rel="stylesheet" href="css/nav-2.css">
+    <script src="https://kit.fontawesome.com/97ad711a98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="nav">
+        <button type="button" class="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="nav-links-container">
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-text">Home</span>
+            </a>
+        </div>
+    </nav>
+    <main class="main">
+        <button class="control-nav" type="button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, alias. Iste, adipisci. Illum dolorem, blanditiis dolor obcaecati consequuntur quam quasi, repellat voluptatum adipisci cum voluptas sed, minima dolore. Quos, iure dolor ipsa vero doloremque ullam commodi cumque enim, nostrum, magni aliquid ipsam optio? Dolorum nam id tempore voluptatem facere incidunt provident maiores architecto non, dolore officia quam dignissimos assumenda doloremque quidem in facilis ullam eveniet? Natus veritatis eligendi voluptatibus suscipit illum, accusamus quidem quisquam temporibus consequatur, quae nam praesentium pariatur, voluptates laboriosam nobis sapiente ipsa fugit? Atque illo odio asperiores maxime doloremque, animi accusantium similique nulla molestias adipisci ducimus pariatur temporibus reiciendis officiis repellendus amet a inventore soluta quos! Nisi, sunt! Temporibus dignissimos praesentium, fugiat at quibusdam cupiditate magnam ullam distinctio illum voluptatum quo nulla blanditiis, laborum similique suscipit earum id impedit excepturi laudantium. A non tenetur enim quas est ut animi quam quia rerum modi impedit aliquid in eum, quibusdam eveniet nisi doloribus, sapiente aperiam. Consequuntur aliquid quam, facere repellendus voluptate velit eius corporis totam.
+        </article>
+        <footer>
+            learn from <a title="youtube channel" href="https://www.youtube.com/watch?v=b6uLtL8M5nc&t=291s">dcode</a>
+        </footer>
+    </main>
+    <script>
+        function toggleNav() {
+            document.body.classList.toggle("nav-open");
+        }
+
+        const controlBtn = document.querySelector(".control-nav");
+        const closeBtn = document.querySelector(".nav-close");
+        controlBtn.addEventListener("click", toggleNav);
+        closeBtn.addEventListener("click", toggleNav);
+    </script>
+</body>
+
+</html>
