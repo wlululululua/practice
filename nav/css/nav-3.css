@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.section {
+    height: 100vh;
+}
+
+#home {
+    background-color: pink;
+}
+
+#about {
+    background-color: #eee;
+}
+
+#contact {
+    background-color: yellow;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    --nav-gap: 15px;
+    padding: var(--nav-gap);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: var(--nav-gap);
+}
+
+.nav-link:hover ~ .nav-label {
+    opacity: 1;
+}
+
+.nav-label {
+    font-weight: bold;
+    color: #000;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.nav-link {
+    width: var(--nav-gap);
+    height: var(--nav-gap);
+    margin-left: var(--nav-gap);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: transfrom 0.1s;
+}
+
+.nav-link-selected {
+    background-color: #000;
+    transform: scale(1.5);
+}
